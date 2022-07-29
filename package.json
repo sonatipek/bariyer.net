@@ -1,0 +1,15 @@
+{
+  "name": "bariyer-net",
+  "version": "1.0.0",
+  "description": "bariyer.net is kariyer.net re-design from Ender Topaloğlu",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "sass --watch sass/:dist/css/"
+  },
+  "keywords": [],
+  "author": "Sonat Saygın İpek",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
