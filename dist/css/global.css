@@ -1,7 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
 :root {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.btn-large {
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 120px;
 }
 
 .featured-ads {
@@ -79,6 +100,47 @@
 }
 .ads-title-card .card-image img {
   border-radius: 0 10px 10px 0;
+}
+
+.career-guide-card {
+  width: 282px;
+  height: 312px;
+  background: transparent;
+}
+.career-guide-card .guide-image {
+  position: relative;
+}
+.career-guide-card .guide-image img {
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+}
+.career-guide-card .guide-image .img-filter {
+  background: #475579;
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+.career-guide-card .guide-content p {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.career-guide-card .guide-content h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #475579;
+}
+.career-guide-card .guide-content a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #35109c;
+  font-size: 0.824rem;
+  background-color: #f7f8fd;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,11 +1,31 @@
-
 @use '_base.scss';
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
+// Import font from Google Fonts & icons from Font Awesome
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
 
 :root{
     font-size: base.$general-size;
     font-family: base.$font;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Buttons
+.btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.btn-large{
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+// Container
+.container{
+    margin: 0 120px;
 }
 // Search Box 
 
@@ -91,3 +111,45 @@
 }
 
 // Career Guide
+.career-guide-card{
+    width: 282px;
+    height: 312px;
+    background: transparent;
+    .guide-image{
+        position: relative;
+        img{
+            width: 282px;
+            height: 170px;
+            border-radius: 10px;
+        }
+        .img-filter{
+            background: base.$defaultText-color;
+            width: 282px;
+            height: 170px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            opacity: .3;
+        }
+    }
+    .guide-content{
+        p{
+            font-weight: base.$font-regular;
+            font-size: base.$subtitle-size;
+            color: base.$subtitleText-color;
+        }
+        h3{
+            font-weight: base.$font-medium;
+            font-size: base.$general-size;
+            color: base.$defaultText-color;
+        }
+        a{
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: base.$secondary-color;
+            font-size: base.$subtitle-size;
+            background-color: base.$backgroundInside-color;
+        }
+    }
+}

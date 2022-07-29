@@ -1,0 +1,75 @@
+@use '_base.scss';
+
+// Navbar
+#navbar{
+    background: #fff;
+    box-shadow: 0 10px 10px 0 #6424E04D;
+    padding: 25px 0;
+    width: 100%;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-weight: base.$font-bold;
+            color: #8715b8;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav-links{
+            display: flex;
+            a{
+                margin-right:  40px;
+                color: #000;
+                font-size: base.$general-size;
+            }
+        }
+        .nav-buttons{
+
+            a{
+                margin-left: 20px;
+                font-weight: base.$font-regular;
+                font-size: base.$general-size;
+                &:nth-child(1){
+                    color: base.$primary-color;
+                    border: 1px solid base.$primary-color;
+                    transition: background-color .5s;
+
+                    &:hover{
+                        color: #fff;
+                        background: base.$primary-color;
+                    }
+                }
+                &:nth-child(2){
+                    color: #fff;
+                    background: base.$primary-color;
+                    border: 1px solid transparent;
+                    transition: background-color .5s;
+            
+                    &:hover{
+                        background: transparent;
+                        color: base.$primary-color;
+                        border: 1px solid base.$primary-color;
+                    }
+                }
+                &:nth-child(3){
+                    color: #fff;
+                    background-color: base.$subtitleText-color;
+                }
+                &:hover{
+                    background-color: base.$subtitleColor-hover;
+                    transition: background-image .5s;
+                }
+            }
+        }
+    }
+}
+
+// İş Ara
+#is-ara{
+    width: 100%;
+    height: 340px;
+    background: base.$gradient-color;
+
+}

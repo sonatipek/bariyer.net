@@ -1,3 +1,67 @@
+#navbar {
+  background: #fff;
+  box-shadow: 0 10px 10px 0 rgba(100, 36, 224, 0.3019607843);
+  padding: 25px 0;
+  width: 100%;
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container h1 {
+  font-weight: 700;
+  color: #8715b8;
+}
+#navbar .container a {
+  text-decoration: none;
+}
+#navbar .container .nav-links {
+  display: flex;
+}
+#navbar .container .nav-links a {
+  margin-right: 40px;
+  color: #000;
+  font-size: 1rem;
+}
+#navbar .container .nav-buttons a {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+#navbar .container .nav-buttons a:nth-child(1) {
+  color: #901c8c;
+  border: 1px solid #901c8c;
+  transition: background-color 0.5s;
+}
+#navbar .container .nav-buttons a:nth-child(1):hover {
+  color: #fff;
+  background: #901c8c;
+}
+#navbar .container .nav-buttons a:nth-child(2) {
+  color: #fff;
+  background: #901c8c;
+  border: 1px solid transparent;
+  transition: background-color 0.5s;
+}
+#navbar .container .nav-buttons a:nth-child(2):hover {
+  background: transparent;
+  color: #901c8c;
+  border: 1px solid #901c8c;
+}
+#navbar .container .nav-buttons a:nth-child(3) {
+  color: #fff;
+  background-color: #94a0c1;
+}
+#navbar .container .nav-buttons a:hover {
+  background-color: #5e667e;
+  transition: background-image 0.5s;
+}
 
+#is-ara {
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(90deg, #9356d5, #5417d6);
+}
 
 /*# sourceMappingURL=main.css.map */
