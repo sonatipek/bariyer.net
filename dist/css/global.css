@@ -12,11 +12,13 @@
 }
 
 .btn {
+  text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
 }
 
 .btn-large {
+  text-decoration: none;
   padding: 20px 30px;
   border-radius: 5px;
 }
@@ -141,6 +143,18 @@
   color: #35109c;
   font-size: 0.824rem;
   background-color: #f7f8fd;
+}
+
+.btn-see-all {
+  background-color: #f7f8fd;
+  color: #35109c;
+}
+
+.btn-circle {
+  background-color: #fff;
+  color: #475579;
+  border-radius: 50%;
+  box-shadow: 0px 7px 15px 0px rgba(0, 105, 195, 0.1019607843);
 }
 
 /*# sourceMappingURL=global.css.map */
