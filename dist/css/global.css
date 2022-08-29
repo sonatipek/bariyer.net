@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
 :root {
-  font-size: 1rem;
+  font-size: 17px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -11,16 +11,14 @@
   box-sizing: border-box;
 }
 
-.btn {
+.btn, .btn-large {
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
 }
 
 .btn-large {
-  text-decoration: none;
   padding: 20px 30px;
-  border-radius: 5px;
 }
 
 .container {
@@ -90,7 +88,7 @@
 }
 .ads-title-card .card-title h3 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 17px;
   color: #475579;
 }
 .ads-title-card .card-title p {
@@ -133,7 +131,7 @@
 }
 .career-guide-card .guide-content h3 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 17px;
   color: #475579;
 }
 .career-guide-card .guide-content a {

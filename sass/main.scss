@@ -31,6 +31,7 @@
                 margin-left: 20px;
                 font-weight: base.$font-regular;
                 font-size: base.$general-size;
+                display: inline-block;
                 &:nth-child(1){
                     color: base.$primary-color;
                     border: 1px solid base.$primary-color;
@@ -60,6 +61,40 @@
                 &:hover{
                     background-color: base.$subtitleColor-hover;
                     transition: background-image .5s;
+                }
+            }
+        }
+    }
+}
+// İsveren Hover
+.isveren-hover{
+    display: none;
+    position: absolute;
+    right: 5%;
+    background-color: white;
+    z-index: 3;
+    background-color: base.$border-color;
+    border-radius: 10px;
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        li{
+            a{
+                display: block;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: base.$titleText-color;
+                padding: 1rem .75rem;
+                &:hover{
+                    color: base.$secondary-color;
+                    background-color: base.$backgroundInside-color;
+                }
+                svg{
+                    margin-right: 1rem;
                 }
             }
         }

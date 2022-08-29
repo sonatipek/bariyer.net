@@ -19,10 +19,10 @@
     padding: 10px 15px;
     border-radius: 5px;
 }
+
 .btn-large{
-    text-decoration: none;
+    @extend .btn;
     padding: 20px 30px;
-    border-radius: 5px;
 }
 
 // Container

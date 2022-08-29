@@ -22,12 +22,13 @@
 #navbar .container .nav-links a {
   margin-right: 40px;
   color: #000;
-  font-size: 1rem;
+  font-size: 17px;
 }
 #navbar .container .nav-buttons a {
   margin-left: 20px;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 17px;
+  display: inline-block;
 }
 #navbar .container .nav-buttons a:nth-child(1) {
   color: #901c8c;
@@ -56,6 +57,38 @@
 #navbar .container .nav-buttons a:hover {
   background-color: #5e667e;
   transition: background-image 0.5s;
+}
+
+.isveren-hover {
+  display: none;
+  position: absolute;
+  right: 5%;
+  background-color: white;
+  z-index: 3;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.isveren-hover ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.isveren-hover ul li a {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #3e3e3e;
+  padding: 1rem 0.75rem;
+}
+.isveren-hover ul li a:hover {
+  color: #35109c;
+  background-color: #f7f8fd;
+}
+.isveren-hover ul li a svg {
+  margin-right: 1rem;
 }
 
 #is-ara {
