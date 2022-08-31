@@ -1,0 +1,26 @@
+
+.btn{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+// Button Large
+.btn-large{
+    @extend .btn;
+    padding: 20px 30px;
+}
+
+// See All Button
+.btn-see-all{
+    background-color: $backgroundInside-color;
+    color: $secondary-color;
+}
+
+// Arrow Button
+.btn-circle{
+    background-color: #fff;
+    color: $defaultText-color;
+    border-radius: 50%;
+    box-shadow: 0px 7px 15px 0px #0069C31A;
+}  

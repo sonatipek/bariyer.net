@@ -1,0 +1,30 @@
+// Ads Title
+.ads-title-card{
+    width: 384px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 7px 15px 0 #0069C31A;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+    .card-title{
+        margin-left: 25px;
+        h3{
+            font-weight: $font-medium;
+            font-size: $general-size;
+            color: $defaultText-color;
+        }
+        p{
+            font-weight: $font-medium;
+            color: $subtitleText-color;
+        }
+    }
+    .card-image{
+        align-self: flex-start;
+         img{
+            border-radius: 0 10px 10px 0;
+         }
+    }
+}

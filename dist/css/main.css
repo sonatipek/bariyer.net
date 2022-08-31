@@ -1,3 +1,149 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+.btn, .btn-large {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.btn-large {
+  padding: 20px 30px;
+}
+
+.btn-see-all {
+  background-color: #f7f8fd;
+  color: #35109c;
+}
+
+.btn-circle {
+  background-color: #fff;
+  color: #475579;
+  border-radius: 50%;
+  box-shadow: 0px 7px 15px 0px rgba(0, 105, 195, 0.1019607843);
+}
+
+.ads-title-card {
+  width: 384px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 7px 15px 0 rgba(0, 105, 195, 0.1019607843);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ads-title-card .card-title {
+  margin-left: 25px;
+}
+.ads-title-card .card-title h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #475579;
+}
+.ads-title-card .card-title p {
+  font-weight: 500;
+  color: #94a0c1;
+}
+.ads-title-card .card-image {
+  align-self: flex-start;
+}
+.ads-title-card .card-image img {
+  border-radius: 0 10px 10px 0;
+}
+
+.career-guide-card {
+  width: 282px;
+  height: 312px;
+  background: transparent;
+}
+.career-guide-card .guide-image {
+  position: relative;
+}
+.career-guide-card .guide-image img {
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+}
+.career-guide-card .guide-image .img-filter {
+  background: #475579;
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+.career-guide-card .guide-content p {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.career-guide-card .guide-content h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #475579;
+}
+.career-guide-card .guide-content a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #35109c;
+  font-size: 0.824rem;
+  background-color: #f7f8fd;
+}
+
+.featured-ads {
+  width: 282px;
+  height: 185px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  box-shadow: 0 7px 0 rgba(0, 105, 195, 0.1019607843);
+  border-radius: 15px;
+}
+.featured-ads .ads-img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+}
+.featured-ads .ads-content {
+  display: flex;
+  flex-direction: column;
+}
+.featured-ads .ads-content .title {
+  font-weight: 500;
+  color: #94a0c1;
+  align-items: left;
+}
+.featured-ads .ads-content .sub-title {
+  font-weight: 500;
+  color: #475579;
+}
+.featured-ads .ads-content .time-info {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.featured-ads .ads-content .more-info {
+  border-top: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+}
+.featured-ads .ads-content .more-info .location-info {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.featured-ads .ads-content .more-info .inspect-ads {
+  font-weight: 400;
+  font-size: 0.824rem;
+}
+
 #navbar {
   background: #fff;
   box-shadow: 0 10px 10px 0 rgba(100, 36, 224, 0.3019607843);
@@ -23,6 +169,10 @@
   margin-right: 40px;
   color: #000;
   font-size: 17px;
+  font-weight: 500;
+}
+#navbar .container .nav-links a:hover {
+  color: #901c8c;
 }
 #navbar .container .nav-buttons a {
   margin-left: 20px;
@@ -54,18 +204,17 @@
   color: #fff;
   background-color: #94a0c1;
 }
-#navbar .container .nav-buttons a:hover {
+#navbar .container .nav-buttons a:nth-child(3):hover {
   background-color: #5e667e;
   transition: background-image 0.5s;
 }
 
 .isveren-hover {
-  display: none;
+  display: inline-block;
   position: absolute;
   right: 5%;
-  background-color: white;
+  background-color: #f9fcfe;
   z-index: 3;
-  background-color: #f5f5f5;
   border-radius: 10px;
 }
 .isveren-hover ul {
@@ -89,6 +238,10 @@
 }
 .isveren-hover ul li a svg {
   margin-right: 1rem;
+}
+
+.container {
+  margin: 0 120px;
 }
 
 #is-ara {
