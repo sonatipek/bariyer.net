@@ -1,5 +1,5 @@
 // *Base
-@import 'base/normalize'; // Normalize CSS
+@import 'base/reset'; // Normalize CSS
 @import 'base/typography';
 
 // *Abstracts
@@ -12,18 +12,11 @@
 @import 'components/featured-ads';
 
 // *Layouts
-@import 'layout/navbar';
+@import 'layout/navbar';    //Navbar
+@import 'layout/banner';    //Banner
+
+
 // Container
 .container{
     margin: 0 120px;
-}
-
-
-
-// İş Ara
-#is-ara{
-    width: 100%;
-    height: 340px;
-    background: $gradient-color;
-
 }
