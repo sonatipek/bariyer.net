@@ -21,12 +21,22 @@
             padding: 1.9rem  1.875rem 1.9rem 1rem;
             border-radius: 5px 0 0 5px;
             color: $defaultText-color;
+
+            &:focus{
+                outline: none;
+                box-shadow: 1px 1px 5px 4px rgba($primary-color, .1) inset;
+            }
         }
         input[type="text"]{
             border: 1px solid transparent;
             width: max-content;
-            padding: 1.98rem  1.875rem 1.98rem 1rem;
+            padding: 1.98rem  5rem 1.98rem 1rem;
             color: $defaultText-color;
+            z-index: 1;
+            &:focus{
+                outline: none;
+                box-shadow: 1px 1px 5px 4px rgba($primary-color, .1) inset;
+            }
         }
         .button-bg{
             background-color: white;

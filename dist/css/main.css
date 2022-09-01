@@ -288,11 +288,20 @@ html {
   border-radius: 5px 0 0 5px;
   color: #475579;
 }
+#is-ara form select:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 4px rgba(144, 28, 140, 0.1) inset;
+}
 #is-ara form input[type=text] {
   border: 1px solid transparent;
   width: max-content;
-  padding: 1.98rem 1.875rem 1.98rem 1rem;
+  padding: 1.98rem 5rem 1.98rem 1rem;
   color: #475579;
+  z-index: 1;
+}
+#is-ara form input[type=text]:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 4px rgba(144, 28, 140, 0.1) inset;
 }
 #is-ara form .button-bg {
   background-color: white;
