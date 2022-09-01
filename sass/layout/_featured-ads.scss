@@ -1,0 +1,34 @@
+.featured-ads.container{
+    @include display-flex(column, center, center);
+    max-width: 100%;
+    margin-top: 4.375rem;
+    
+    .header{
+        @include display-flex(row, space-between, center);
+        width: 100%;
+        
+        h3{
+            color: $titleText-color;
+            font-size: 1.5rem;
+            font-weight: $font-medium;
+            span{
+                color: $primary-color;
+            }
+        }
+        .arrow-buttons{
+            @include display-flex(row, center, center);
+            gap: 1.175rem;
+
+            // btn-circle-arrow in button component
+        }
+         
+    }
+
+    .featured-ads-cards{
+        @include display-flex(row, space-between, center);
+        width: 100%;
+
+        // For Featured Ads Card
+        @import 'components/featured-ads-card'
+    }
+}

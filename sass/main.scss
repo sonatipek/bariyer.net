@@ -10,14 +10,14 @@
 
 // *Components
 @import 'components/buttons';
+@import 'components/featured-ads-card';
 @import 'components/adsTitle';
 @import 'components/careerGuide';
-@import 'components/featured-ads';
 
 // *Layouts
 @import 'layout/navbar';
 @import 'layout/banner';
-
+@import 'layout/featured-ads';
 
 // Container
 .container{

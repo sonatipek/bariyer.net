@@ -17,10 +17,16 @@
     }
 
     // Buton Circle
-    &-circle{
+    &-circle-arrow{
         background-color: #fff;
         color: $defaultText-color;
         border-radius: 50%;
-        box-shadow: 0px 7px 15px 0px #0069C31A;
+        padding: .5rem .75rem;
+        box-shadow: 0px 7px 15px 0px #0068c31e;
+        transition: scale .3s;
+
+        &:hover{
+            scale: 1.1;
+        }
     }
 }
