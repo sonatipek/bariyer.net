@@ -1,13 +1,11 @@
 // Ads Title
 .ads-title-card{
+    @include display-flex(row, space-between, center);
     width: 384px;
     height: 150px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 7px 15px 0 #0069C31A;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
     
     .card-title{
         margin-left: 25px;

@@ -1,9 +1,8 @@
 // Featured Ads
 .featured-ads{
+    @include display-flex(row, space-evenly, left);
     width: 282px;
     height: 185px;
-    display: flex;
-    justify-content: space-evenly;
     background-color: #fff;
     box-shadow: 0 7px 0 #0069C31A;
     border-radius: 15px;
@@ -14,8 +13,7 @@
         border-radius: 50%;
     }
     .ads-content{
-        display: flex;
-        flex-direction: column;
+        @include display-flex(column, flex-start, flex-start);
         .title{
             font-weight: $font-medium;
             color: $subtitleText-color;
@@ -32,9 +30,8 @@
             color: $subtitleText-color;
         }
         .more-info{
+            @include display-flex(row, space-around, flex-start);
             border-top: 1px solid $border-color;
-            display: flex;
-            justify-content: space-around;
             .location-info{
                 font-weight: $font-regular;
                 font-size: $subtitle-size;

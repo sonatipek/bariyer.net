@@ -5,9 +5,7 @@
     padding: 25px 0;
     width: 100%;
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include display-flex(row, space-between, center);
         h1{
             font-weight: $font-bold;
             color: #8715b8;

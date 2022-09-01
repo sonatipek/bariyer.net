@@ -2,8 +2,10 @@
 @import 'base/reset'; // Normalize CSS
 @import 'base/typography';
 
+
 // *Abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 // *Components
 @import 'components/buttons';
