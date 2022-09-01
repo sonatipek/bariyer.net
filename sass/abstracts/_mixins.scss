@@ -5,3 +5,22 @@
     justify-content: $f-justifycontent;
     align-items: $f-alignitems;
 }
+
+// Buttons
+@mixin btn($text-color, $bg-color, $border-px, $border-style, $border-color){
+    color: $text-color;
+    background-color: $bg-color;
+    border: $border-px $border-style $border-color;
+    transition: background-color .5s;
+
+    &:hover{
+        color: $bg-color;
+        background-color: $text-color;
+    }
+}
+
+
+    // &:hover{
+    //     color: #fff;
+    //     background: $primary-color;
+    // }

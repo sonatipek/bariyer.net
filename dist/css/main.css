@@ -193,29 +193,29 @@ html {
 }
 #navbar .container .nav-buttons a {
   margin-left: 20px;
-  font-weight: 400;
   font-size: 17px;
+  font-weight: 400;
   display: inline-block;
 }
 #navbar .container .nav-buttons a:nth-child(1) {
   color: #901c8c;
+  background-color: white;
   border: 1px solid #901c8c;
   transition: background-color 0.5s;
 }
 #navbar .container .nav-buttons a:nth-child(1):hover {
-  color: #fff;
-  background: #901c8c;
+  color: white;
+  background-color: #901c8c;
 }
 #navbar .container .nav-buttons a:nth-child(2) {
-  color: #fff;
-  background: #901c8c;
-  border: 1px solid transparent;
+  color: white;
+  background-color: #901c8c;
+  border: 1px solid #901c8c;
   transition: background-color 0.5s;
 }
 #navbar .container .nav-buttons a:nth-child(2):hover {
-  background: transparent;
   color: #901c8c;
-  border: 1px solid #901c8c;
+  background-color: white;
 }
 #navbar .container .nav-buttons a:nth-child(3) {
   color: #fff;

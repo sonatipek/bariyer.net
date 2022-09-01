@@ -18,8 +18,11 @@
             a{
                 margin-right:  40px;
                 color: #000;
-                font-size: $general-size;
-                font-weight: $font-medium;
+                font:{
+                    size: $general-size;
+                    weight: $font-medium;
+                }
+
                 &:hover{
                     color: $primary-color;
                 }
@@ -28,30 +31,17 @@
         .nav-buttons{
             a{
                 margin-left: 20px;
-                font-weight: $font-regular;
-                font-size: $general-size;
+                font:{
+                    size: $general-size;
+                    weight: $font-regular;
+                }
                 display: inline-block;
-                &:nth-child(1){
-                    color: $primary-color;
-                    border: 1px solid $primary-color;
-                    transition: background-color .5s;
 
-                    &:hover{
-                        color: #fff;
-                        background: $primary-color;
-                    }
+                &:nth-child(1){
+                    @include btn($primary-color, white, 1px, solid, $primary-color);
                 }
                 &:nth-child(2){
-                    color: #fff;
-                    background: $primary-color;
-                    border: 1px solid transparent;
-                    transition: background-color .5s;
-            
-                    &:hover{
-                        background: transparent;
-                        color: $primary-color;
-                        border: 1px solid $primary-color;
-                    }
+                    @include btn(white, $primary-color, 1px, solid, $primary-color);
                 }
                 &:nth-child(3){
                     color: #fff;
