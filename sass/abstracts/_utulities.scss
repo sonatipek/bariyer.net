@@ -3,28 +3,28 @@ $units : ("1":0.625rem, "2":0.75rem, "3":0.875rem, "4":1rem, "5":1.125rem, "6":1
 // *Margin
 // Margin Top
 @each $name, $value in $units{
-    mt-#{$name}{
+    .mt-#{$name}{
         margin-top:  $value;
     }
 }
 
 // Margin Right
 @each $name, $value in $units{
-    mr-#{$name}{
+    .mr-#{$name}{
         margin-right:  $value;
     }
 }
 
 // Margin Bottom
 @each $name, $value in $units{
-    mb-#{$name}{
+    .mb-#{$name}{
         margin-bottom:  $value;
     }
 }
 
 // Margin Left
 @each $name, $value in $units{
-    ml-#{$name}{
+    .ml-#{$name}{
         margin-left:  $value;
     }
 }
@@ -32,28 +32,28 @@ $units : ("1":0.625rem, "2":0.75rem, "3":0.875rem, "4":1rem, "5":1.125rem, "6":1
 // *Padding
 // Padding Top
 @each $name, $value in $units{
-    pt-#{$name}{
+    .pt-#{$name}{
         padding-top:  $value;
     }
 }
 
 // Padding Right
 @each $name, $value in $units{
-    pr-#{$name}{
+    .pr-#{$name}{
         padding-right:  $value;
     }
 }
 
 // Padding Left
 @each $name, $value in $units{
-    pl-#{$name}{
+    .pl-#{$name}{
         padding-left:  $value;
     }
 }
 
 // Padding Bottom
 @each $name, $value in $units{
-    pb-#{$name}{
+    .pb-#{$name}{
         padding-bottom:  $value;
     }
 }
