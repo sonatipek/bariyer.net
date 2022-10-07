@@ -1,18 +1,609 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 32 |         @import 'components/featured-ads-card'
- *    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\layout\_featured-ads.scss 32:17  @import
- *   sass\main.scss 20:9                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 32 \2502          @import 'components/featured-ads-card'\d\a    \2502                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\layout\\_featured-ads.scss 32:17  @import\a   sass\\main.scss 20:9                   root stylesheet";
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+.mt-1 {
+  margin-top: 0.625rem;
+}
+
+.mt-2 {
+  margin-top: 0.75rem;
+}
+
+.mt-3 {
+  margin-top: 0.875rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.125rem;
+}
+
+.mt-6 {
+  margin-top: 1.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.625rem;
+}
+
+.mr-2 {
+  margin-right: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.875rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.125rem;
+}
+
+.mr-6 {
+  margin-right: 1.25rem;
+}
+
+.mr-7 {
+  margin-right: 1.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.625rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.125rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.625rem;
+}
+
+.ml-2 {
+  margin-left: 0.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.875rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.125rem;
+}
+
+.ml-6 {
+  margin-left: 1.25rem;
+}
+
+.ml-7 {
+  margin-left: 1.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.625rem;
+}
+
+.pt-2 {
+  padding-top: 0.75rem;
+}
+
+.pt-3 {
+  padding-top: 0.875rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.125rem;
+}
+
+.pt-6 {
+  padding-top: 1.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.625rem;
+}
+
+.pr-2 {
+  padding-right: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.875rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-5 {
+  padding-right: 1.125rem;
+}
+
+.pr-6 {
+  padding-right: 1.25rem;
+}
+
+.pr-7 {
+  padding-right: 1.5rem;
+}
+
+.pl-1 {
+  padding-left: 0.625rem;
+}
+
+.pl-2 {
+  padding-left: 0.75rem;
+}
+
+.pl-3 {
+  padding-left: 0.875rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-5 {
+  padding-left: 1.125rem;
+}
+
+.pl-6 {
+  padding-left: 1.25rem;
+}
+
+.pl-7 {
+  padding-left: 1.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.625rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.875rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.125rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.5rem;
+}
+
+.btn, .btn-large {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.btn-large {
+  padding: 20px 30px;
+}
+.btn-see-all {
+  background-color: #f7f8fd;
+  color: #35109c;
+}
+.btn-circle-arrow {
+  background-color: #fff;
+  color: #475579;
+  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0px 7px 15px 0px rgba(0, 104, 195, 0.1176470588);
+  transition: scale 0.3s;
+}
+.btn-circle-arrow:hover {
+  scale: 1.1;
+}
+
+.featured-ads-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 282px;
+  height: 185px;
+  background-color: #fff;
+  box-shadow: 0 7px 0 rgba(0, 105, 195, 0.1019607843);
+  border-radius: 15px;
+}
+.featured-ads-card .ads-img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+}
+.featured-ads-card .ads-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.featured-ads-card .ads-content .title {
+  font-weight: 500;
+  color: #94a0c1;
+  align-items: left;
+}
+.featured-ads-card .ads-content .sub-title {
+  font-weight: 500;
+  color: #475579;
+}
+.featured-ads-card .ads-content .time-info {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.featured-ads-card .ads-content .more-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-top: 1px solid #f5f5f5;
+}
+.featured-ads-card .ads-content .more-info .location-info {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.featured-ads-card .ads-content .more-info .inspect-ads {
+  font-weight: 400;
+  font-size: 0.824rem;
+  text-decoration: none;
+}
+
+.ads-title-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 384px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 7px 15px 0 rgba(0, 105, 195, 0.1019607843);
+}
+.ads-title-card .card-title {
+  margin-left: 1.5rem;
+}
+.ads-title-card .card-title h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #475579;
+}
+.ads-title-card .card-title p {
+  font-weight: 500;
+  color: #94a0c1;
+}
+.ads-title-card .card-image {
+  align-self: flex-start;
+}
+.ads-title-card .card-image img {
+  border-radius: 0 10px 10px 0;
+}
+
+.career-guide-card {
+  width: 282px;
+  height: 312px;
+  background: transparent;
+}
+.career-guide-card .guide-image {
+  position: relative;
+}
+.career-guide-card .guide-image img {
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+}
+.career-guide-card .guide-image .img-filter {
+  background: #475579;
+  width: 282px;
+  height: 170px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+.career-guide-card .guide-content p {
+  font-weight: 400;
+  font-size: 0.824rem;
+  color: #94a0c1;
+}
+.career-guide-card .guide-content h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #475579;
+}
+.career-guide-card .guide-content a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #35109c;
+  font-size: 0.824rem;
+  background-color: #f7f8fd;
+}
+
+#navbar {
+  background: #fff;
+  box-shadow: 0 10px 10px 0 rgba(100, 36, 224, 0.3019607843);
+  padding: 25px 0;
+  width: 100%;
+}
+#navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container h1 {
+  font-weight: 700;
+  color: #8715b8;
+}
+#navbar .container a {
+  text-decoration: none;
+}
+#navbar .container .nav-links {
+  display: flex;
+}
+#navbar .container .nav-links a {
+  margin-right: 40px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+}
+#navbar .container .nav-links a:hover {
+  color: #901c8c;
+}
+#navbar .container .nav-buttons a {
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  display: inline-block;
+}
+#navbar .container .nav-buttons a:nth-child(1) {
+  color: #901c8c;
+  background-color: white;
+  border: 1px solid #901c8c;
+  transition: background-color 0.5s;
+}
+#navbar .container .nav-buttons a:nth-child(1):hover {
+  color: white;
+  background-color: #901c8c;
+}
+#navbar .container .nav-buttons a:nth-child(2) {
+  color: white;
+  background-color: #901c8c;
+  border: 1px solid #901c8c;
+  transition: background-color 0.5s;
+}
+#navbar .container .nav-buttons a:nth-child(2):hover {
+  color: #901c8c;
+  background-color: white;
+}
+#navbar .container .nav-buttons a:nth-child(3) {
+  color: #fff;
+  background-color: #94a0c1;
+}
+#navbar .container .nav-buttons a:nth-child(3):hover {
+  background-color: #5e667e;
+  transition: background-image 0.5s;
+}
+
+.isveren-hover {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  background-color: #f9fcfe;
+  z-index: 3;
+  border-radius: 10px;
+}
+.isveren-hover ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.isveren-hover ul li a {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #3e3e3e;
+  padding: 1rem 0.75rem;
+}
+.isveren-hover ul li a:hover {
+  color: #35109c;
+  background-color: #f7f8fd;
+}
+.isveren-hover ul li a svg {
+  margin-right: 1rem;
+}
+
+#is-ara {
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(90deg, #9356d5, #5417d6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#is-ara .banner-bg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+#is-ara h2 {
+  color: white;
+  font-weight: 400;
+  width: 230px;
+  text-align: center;
+  line-height: 30px;
+}
+#is-ara form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#is-ara form select {
+  height: 90px;
+  border: 1px solid transparent;
+  border-right: 2px solid #f5f5f5;
+  width: max-content;
+  padding: 1.9rem 1.875rem 1.9rem 1rem;
+  border-radius: 5px 0 0 5px;
+  color: #475579;
+}
+#is-ara form select:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 4px rgba(144, 28, 140, 0.1) inset;
+}
+#is-ara form input[type=text] {
+  height: 90px;
+  border: 1px solid transparent;
+  width: max-content;
+  padding: 1.98rem 5rem 1.98rem 1rem;
+  color: #475579;
+  z-index: 1;
+}
+#is-ara form input[type=text]:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 4px rgba(144, 28, 140, 0.1) inset;
+}
+#is-ara form .button-bg {
+  height: 90px;
+  background-color: white;
+  padding: 0.88rem 1.75rem;
+  width: max-content;
+  border-left: 2px solid #f5f5f5;
+  border-radius: 0 5px 5px 0;
+}
+#is-ara form button[type=submit] {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 1.1rem 1.875rem;
+  background-color: white;
+  cursor: pointer;
+  color: white;
+  background-color: #35109c;
+}
+#is-ara form button[type=submit]:hover {
+  background-color: #250b6e;
+}
+#is-ara form button[type=submit] i {
+  margin-left: 1rem;
+}
+
+.featured-ads.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 4.375rem;
+}
+.featured-ads.container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.featured-ads.container .header h3 {
+  color: #3e3e3e;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.featured-ads.container .header h3 span {
+  color: #901c8c;
+}
+.featured-ads.container .header .arrow-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.175rem;
+}
+.featured-ads.container .featured-ads-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  margin: 0 120px;
+}
+
+/*# sourceMappingURL=main.css.map */
